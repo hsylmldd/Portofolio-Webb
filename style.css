@@ -20,12 +20,55 @@ body {
 }
 
 /* Navbar Styles */
+/* Navbar */
 .navbar {
-    padding: 1.5rem 0;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding: 10px 20px; /* Menyesuaikan padding */
+}
+
+/* Tambahkan margin pada body agar tidak tertutup navbar */
+body {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Header */
+header {
+    padding-top: 100px; /* Tambahkan lebih banyak padding agar konten tidak tertutup */
+    text-align: center;
+}
+
+/* Responsivitas */
+@media (max-width: 992px) {
+    body {
+        padding-top: 90px;
+    }
+    header {
+        padding-top: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+    header {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 110px;
+    }
+    header {
+        padding-top: 130px;
+    }
 }
 
 .navbar.scrolled {
@@ -54,6 +97,47 @@ body {
 .nav-link:hover::after {
     width: 100%;
 }
+/* Tambahkan CSS untuk navbar toggle setengah layar */
+.navbar-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* Setengah layar */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggle.active {
+    transform: translateX(0);
+}
+
+/* Memindahkan tombol mode terang/gelap */
+.toggle-dark-mode {
+    position: absolute;
+    top: 10px;
+    left: -50px; /* Geser ke kiri saat navbar aktif */
+    transition: left 0.3s ease-in-out;
+}
+
+.navbar-toggle.active .toggle-dark-mode {
+    left: -60px;
+}
+[data-theme="dark"] .navbar {
+    background-color: black !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Toggle menu tetap putih saat mode gelap */
+[data-theme="dark"] .navbar-toggler i {
+    color: white !important;
+}
+
+
+
+
 
 .star-green {
     color: var(--accent-color);
@@ -112,10 +196,6 @@ body {
     transform: scale(1.1);
 }
 
-/* About Image */
-
-
-/* About Me Icons */
 /* About Me Icons */
 .icon-container {
     display: flex;
@@ -308,21 +388,21 @@ body {
     color: #000; /* Warna ikon gelap */
 }
 /* Footer */
-.footer {
+/* .footer {
     background: rgba(0, 0, 0, 0.95);
     padding: 3rem 0;
 }
 
 .social-links a {
     color: var(--text-color);
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--accent-color);
-}
+} */
 
 /* Responsive Design */
 
@@ -362,4 +442,75 @@ body {
 
 .view-doc:hover {
     color: #0040ff; /* Warna saat hover */
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 3rem 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Jarak antar ikon */
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 60px; /* Ukuran logo lebih besar dan konsisten */
+    height: 60px;
+    transition: transform 0.3s ease; /* Transisi untuk efek ngambang */
+    transform: translateY(-10px); /* Efek ngambang permanen */
+}
+
+.social-links a:hover img {
+    transform: translateY(-15px); /* Efek ngambang lebih saat hover */
+}
+
+/* Responsivitas untuk HP */
+@media (max-width: 768px) {
+    .social-links img {
+        width: 35px; /* Ukuran lebih kecil di layar kecil */
+    }
+}
+
+.email {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Decorative Shapes */
+.decorative-shape-top {
+    position: absolute;
+    top: -100px; /* Sesuaikan posisi */
+    left: 0;
+    width: 100%;
+    height: 300px; /* Tinggi elemen hiasan */
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Warna gradasi */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Bentuk segitiga */
+    z-index: -1; /* Pastikan di belakang konten */
+}
+
+.decorative-shape-bottom {
+    position: absolute;
+    bottom: -100px; /* Sesuaikan posisi */
+    left: 0;
+    width: 100%;
+    height: 300px; /* Tinggi elemen hiasan */
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Warna gradasi */
+    clip-path: polygon(0 100%, 100% 100%, 100% 20%, 0 0); /* Bentuk segitiga terbalik */
+    z-index: -1; /* Pastikan di belakang konten */
+}
+
+@media (max-width: 768px) {
+    .decorative-shape-bottom {
+        height: 200px; /* Sesuaikan tinggi untuk perangkat kecil */
+    }
 }
