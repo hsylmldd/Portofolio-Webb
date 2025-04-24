@@ -1,231 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- DM Serif Display Font -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- DM Serif Display Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="star-green">★</span><span class="star-white">★</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="theme-switch" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </div>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="star-green">★</span><span class="star-white">★</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="theme-switch" title="Toggle Theme">
+          <i class="fas fa-moon"></i>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1>Hasya<br>Maulida</h1>
-                    <p class="lead">A passionate developer focused on creating interactive and responsive web applications.</p>
-                    <div class="scroll-indicator">
-                        <div class="scroll-line"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="hero-image">
-                        <img src="assets/asset 6.jpg" alt="Your Photo" class="img-fluid">
-                    </div>
-                </div>
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h1>Hasya<br>Maulida</h1>
+          <p class="lead">A passionate developer focused on creating interactive and responsive web applications.</p>
+          <!-- <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+          </div> -->
         </div>
-    </section>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="hero-image">
+            <img src="assets/asset 6.jpg" alt="Your Photo" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Me Section -->
-<!-- About Me Section -->
-<!-- <section id="about" class="section-padding">
+  <!-- About Me Section -->
+  <section id="about" class="section-padding">
     <div class="container position-relative text-center">
-        <h2 class="text-center mb-3">About Me</h2>
-        <p class="mb-5">Final-year student with knowledge in Web Development and Software Testing. Experienced in PHP Framework, JavaScript, SQL, and Google Cloud. Enthusiastic about web development, quality assurance, and cloud engineering.</p>
-        <div class="about-image">
-            <img src="assets/asset 2.jpg" alt="About Me" class="img-fluid">
-        </div>
-        <div class="decorative-image">
-            <img src="assets/asset 2.jpg" alt="Decorative" class="img-fluid">
-        </div>
+      <h2 class="text-center mb-3">About Me</h2>
+      <p class="mb-5">I am currently a fourth-semester student majoring in Information Technology, with a strong focus on web development.
+        I am highly motivated to stay abreast of emerging technologies and dedicated to enhancing my technical competencies
+        through continuous self-directed learning and project-based experience. I have hands-on experience with programming
+        languages such as HTML, CSS, JavaScript, PHP, and C#, which I use to build functional and responsive websites and
+        applications. I possess excellent interpersonal skills and have a proven ability to collaborate effectively within team
+        environments to achieve shared objectives. I am keen to pursue a career in the IT industry, where I can contribute
+        meaningfully and grow as a professional.</p>
+      <div class="icon-container">
+        <a href="assets/CV HASYA MAULIDA.pdf" class="icon-link" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-alt"></i>
+          <span>Download CV</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1OKUBFDGfO3bhbgMxlX8MXpGgBzxJxocH" class="icon-link" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-certificate"></i>
+          <span>See Certificate</span>
+        </a>
+      </div>
     </div>
-</section> -->
-<!-- About Me Section -->
-<section id="about" class="section-padding">
-    <div class="container position-relative text-center">
-        <h2 class="text-center mb-3">About Me</h2>
-        <p class="mb-5">Final-year student with knowledge in Web Development and Software Testing. Experienced in PHP Framework, JavaScript, SQL, and Google Cloud.
-             Enthusiastic about web development, quality assurance, and cloud engineering.A passionate developer focused on creating interactive and responsive web applications. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae nobis nihil suscipit. Pariatur inventore consequuntur, quis fugit minus adipisci harum dignissimos eveniet, exercitationem hic natus, cumque fuga eius. Animi?</p>
-        <div class="icon-container">
-            <a href="link_to_your_cv" class="icon-link">
-                <i class="fas fa-file-alt"></i>
-                <span>Download CV</span>
-            </a>
-            <a href="link_to_your_certificate" class="icon-link">
-                <i class="fas fa-certificate"></i>
-                <span>See Certificate</span>
-            </a>
+  </section>
+ 
+  
+  <!-- Riwayat Pendidikan -->
+  <section id="pendidikan" class="container section-padding">
+    <h2 class="judul-section text-center">Education 🎓</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="pendidikan-item text-center">
+          <img src="assets/logo ccit.png" alt="Logo UI" class="logo-kampus img-fluid mb-3">
+          <h4>CEP-CCIT FTUI</h4>
+          <p>Diploma in Information Technology<br>2023 - 2025</p>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="pendidikan-item text-center">
+          <img src="assets/AeU Logo.png" alt="Logo AEU" class="logo-kampus img-fluid mb-3">
+          <h4>Asia e University</h4>
+          <p>Bachelor of Information and Communication Technology<br>2023 - 2027</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-    <!-- Skills Section -->
-    <!-- Skills Section -->
-
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-<section id="projects" class="section-padding">
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
     <div class="container">
-        <h2 class="text-center mb-5">Here are some of my projects I have done lately. Feel free to check them out.</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <h4>Website (Latest Project)</h4>
-                <h5>Kitten Pet Shop</h5>
-                <p>The "web-kitten-petshop" project is an e-commerce website designed for pet stores, focusing on kitten adoption and sales. It allows users to browse available kittens, view detailed information, and register or log in to access additional features. Developed using HTML, CSS, JavaScript, and Bootstrap, the project is still in its early stages and currently includes only the landing page, featuring the homepage, kitten list, and login/registration pages.</p>
-                <a href="https://hsylmldd.github.io/web-kitten-petshop/" class="view-doc">View Github Documentation</a>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <h4>Mobile App (Latest Project)</h4>
-                <h5>Dermatological AI System for Your Skin (DAISY)</h5>
-                <p>Project DAISY is a project that focused on Indonesian citizen’s dermatological problem. DAISY stands for Dermatological AI System for Your Skin.</p>
-                <a href="https://hsylmldd.github.io/Edu-Course/" class="view-doc">View Github Documentation</a>
-            </div>
+      <h2 class="text-center mb-5">Here are some of my projects I have done lately. Feel free to check them out.</h2>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h4>Kitten Pet Shop</h4>
+          <p>The "web-kitten-petshop" project's initial phase focuses on a compelling landing page designed for pet stores
+            specializing in kitten adoption and sales. This entry point allows visitors to immediately browse adorable available
+            kittens and access detailed information about them. The landing page also incorporates user registration and login
+            functionalities for future engagement. Built with HTML, CSS, JavaScript, and Bootstrap, this initial release
+            provides a foundational experience, featuring the homepage, a showcase of available kittens, and dedicated
+            login/registration sections.</p>
+          <a href="https://hsylmldd.github.io/web-kitten-petshop/" class="view-doc">Go to website</a>
         </div>
+        <div class="col-lg-6 mb-4">
+          <h4>Simple E-Learning Website (Edu Course)</h4>
+          <p>static learning platform using HTML, CSS, and JavaScript. This project focused on delivering a clean and intuitive
+            interface for learners to easily navigate educational content. Integrated features include organized course listings,
+            and a fully responsive design optimized for various devices. The website emphasizes accessibility and simplicity,
+            making it suitable for independent learners or educational institutions looking for a lightweight, front-end-only
+            solution.
+          </p>
+          <a href="https://hsylmldd.github.io/Edu-Course/" class="view-doc">Go to website</a>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <h4>Car Rental Application</h4>
+          <p>a desktop-based car rental application using C# with Windows Forms in Visual Studio. The application allows users
+            to manage vehicle rentals efficiently through a user-friendly interface. Key features include customer registration,
+            vehicle inventory management, rental booking, return tracking, and transaction summaries. The system supports basic
+            CRUD operations for both vehicles and customers, as well as validation features to ensure data accuracy. This project
+            was designed to simulate a real-world car rental service and improve practical understanding of object-oriented
+            programming, form-based application design, and basic database handling in C#.
+          </p>
+          <a href="https://github.com/hsylmldd/Rental-Car" class="view-doc">View GitHub Documentation</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="skills" class="section-padding">
-    <div class="container">
-        <h2 class="text-center mb-5">Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="skill-item" data-aos="flip-left">
-                <div class="skill-icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <span>HTML5</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
-                <div class="skill-icon">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <span>CSS3</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
-                <div class="skill-icon">
-                    <i class="fab fa-js"></i>
-                </div>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
-                <div class="skill-icon">
-                    <i class="fab fa-php"></i>
-                </div>
-                <span>PHP</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
-                <div class="skill-icon">
-                    <i class="fab fa-bootstrap"></i>
-                </div>
-                <span>Bootstrap</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
-                <div class="skill-icon">
-                    <i class="fab fa-java"></i>
-                </div>
-                <span>Java</span>
-            </div>
-            <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
-                <div class="skill-icon">
-                    <i class="fab fa-windows"></i>
-                </div>
-                <span>C#</span>
-            </div>
+  <!-- Pengalaman Kepanitiaan -->
+  <section id="pengalaman" class="container section-padding">
+    <h2 class="judul-section text-center">Event and Committee</h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event 1.jpg" alt="Acara 1" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>Comparative Study Android UPNVJ-Komandro</p>
+          </div>
         </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event2.jpg" alt="Acara 2" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>Kombyte Bug Bounty Competition Committee</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event7.jpg" alt="Acara 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>Workshop Committee</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event4.jpg" alt="Acara 4" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>Company Visit to WIR Group and Studio Shoh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event5.jpg" alt="Acara 5" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>AWS Community Day Indonesia 2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img src="assets/event6.jpg" alt="Acara 6" class="card-img-top img-fluid">
+          <div class="card-body">
+            <p>Company Visit to Komatsu and Nusantara TV</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section-padding">
+  <section id="skills" class="section-padding">
     <div class="container">
-        <h2 class="text-center mb-5">Get In Touch</h2>
-        <div class="row">
-            <div class="col-lg-12 text-center" data-aos="fade-up">
-                <div class="contact-info">
-                   
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/hasyamaulidaa" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="img-fluid social-icon">
-                        </a>
-                        <a href="mailto:hasyamaulidaa16@gmail.com" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="img-fluid social-icon">
-                        </a>
-                        <a href="https://www.linkedin.com/in/hasya-maulida" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="img-fluid social-icon"> <!-- Logo LinkedIn yang benar -->
-                        </a>
-                        <a href="https://github.com/hsylmldd" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="img-fluid social-icon">
-                        </a>
-                        <a href="https://wa.me/+6281996121333" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="img-fluid social-icon">
-                        </a>
-                    </div>
-                    <p class="email">Lets Connect With me </p>
-                </div>
-            </div>
+      <h2 class="text-center mb-5">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-item" data-aos="flip-left">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <span>HTML5</span>
         </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
+          <div class="skill-icon">
+            <i class="fab fa-php"></i>
+          </div>
+          <span>PHP</span>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
+          <div class="skill-icon">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <span>Java</span>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
+          <div class="skill-icon">
+            <i class="fab fa-windows"></i>
+          </div>
+          <span>C#</span>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-   <!-- Footer -->
-<footer class="footer">
-    <div class="decorative-shape-bottom"></div> <!-- Elemen hiasan di bawah -->
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            
-                <p class="copyright">© Hasya Maulida. All rights reserved.</p>
+      <h2 class="text-center mb-5">Get In Touch</h2>
+      <div class="row">
+        <div class="col-lg-12 text-center" data-aos="fade-up">
+          <div class="contact-info">
+            <div class="social-links">
+              <a href="https://www.instagram.com/hasyamaulidaa" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+                  class="img-fluid social-icon">
+              </a>
+              <a href="mailto:hasyamaulidaa16@gmail.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"
+                  class="img-fluid social-icon">
+              </a>
+              <a href="https://www.linkedin.com/in/hasya-maulida" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"
+                  class="img-fluid social-icon">
+              </a>
+              <a href="https://github.com/hsylmldd" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
+                  class="img-fluid social-icon">
+              </a>
+              <a href="https://wa.me/+6281996121333" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                  class="img-fluid social-icon">
+              </a>
             </div>
+            <p class="email">Lets Connect With me </p>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="decorative-shape-bottom"></div>
+    <!-- Elemen hiasan di bawah -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="copyright">© Hasya Maulida. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
